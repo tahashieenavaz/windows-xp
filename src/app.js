@@ -1,4 +1,8 @@
 (function () {
+  setTimeout(() => {
+    $("#black").style.display = "none";
+    $("#blue").style.display = "flex";
+  }, 3000);
   function $(s) {
     return document.querySelector(s);
   }
