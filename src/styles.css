@@ -12,7 +12,8 @@
   justify-content: center;
   flex: 1;
 }
-body, html {
+body,
+html {
   overflow: hidden;
 }
 body {
@@ -29,9 +30,9 @@ img {
   user-select: none;
 }
 #loader {
-  width: 300px;
-  height: 25px;
-  border-radius: 1rem;
+  width: 250px;
+  height: 20px;
+  border-radius: 0.5rem;
   border: 1px solid #fafafa;
   padding: 0.75rem 0;
   position: relative;
@@ -53,10 +54,18 @@ img {
   width: 15px;
   aspect-ratio: 1;
   background: #3b77bc;
-  box-shadow: ;
 }
 .copyright {
   width: 80vw;
+  font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright > div:nth-child(2) img {
+  width: 105px;
 }
 
 @keyframes loaderDots {
@@ -79,4 +88,10 @@ img {
   flex: 1;
   display: grid;
   place-content: center;
+  gap: 2rem;
+}
+#black {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
