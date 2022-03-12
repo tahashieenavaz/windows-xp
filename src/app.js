@@ -23,7 +23,7 @@
       },
       { once: true }
     );
-  }, 1);
+  }, 3000);
 
   function $(s) {
     return document.querySelector(s);
