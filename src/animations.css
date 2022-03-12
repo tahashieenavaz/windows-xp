@@ -1,0 +1,16 @@
+@keyframes loaderDots {
+  0% {
+    visibility: visible;
+    left: -5%;
+  }
+  50% {
+    left: 105%;
+  }
+  51% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+    left: -5%;
+  }
+}

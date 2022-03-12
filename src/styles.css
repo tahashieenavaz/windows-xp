@@ -1,3 +1,4 @@
+@import url("animations.css");
 :root {
   --gradient-color: rgba(255, 255, 255, 0.6);
   --gradient-first-percentage: 1%;
@@ -81,9 +82,10 @@ img {
   display: flex;
   flex-direction: column;
   padding-bottom: 2rem;
+  cursor: none;
 }
 #blue {
-  display: flex;
+  cursor: url("assets/default.cur"), auto;
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
@@ -103,7 +105,7 @@ img {
   align-items: center;
 }
 #blue main .right span {
-  text-shadow: 1px 2px 0 #0037a9;
+  text-shadow: 1.3px 2.5px 0 #0037a9;
 }
 #blue :is(header, footer) {
   background: #0037a9;
@@ -159,21 +161,4 @@ img {
     var(--gradient-color) var(--gradient-first-percentage),
     transparent
   );
-}
-
-@keyframes loaderDots {
-  0% {
-    visibility: visible;
-    left: -5%;
-  }
-  50% {
-    left: 105%;
-  }
-  51% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: hidden;
-    left: -5%;
-  }
 }
