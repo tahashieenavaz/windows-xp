@@ -11,5 +11,5 @@ import "./styles/pages/desktop.css"
 after(settings.duration.black, showBluePage)
 after(settings.duration.black + settings.duration.blue, () => {
   $("#blue").style.display = "none"
-  $("#desktop").style.display = "flex"
+  $("#desktop").style.display = "grid"
 })
