@@ -9,21 +9,24 @@ after(3, () => {
   $("#black").style.display = "none"
   $("#blue").style.display = "flex"
 
-  after(1, () => ($("#blue").style.cursor = `url(assets/waiting.cur), auto`))
+  after(
+    1,
+    () => ($("#blue").style.cursor = `url(assets/cursors/waiting.cur), auto`)
+  )
 
   after(
     1 + 0.5,
-    () => ($("#blue").style.cursor = `url(assets/default.cur), auto`)
+    () => ($("#blue").style.cursor = `url(assets/cursors/default.cur), auto`)
   )
 
   after(
     1 + 0.5 + 0.3,
-    () => ($("#blue").style.cursor = `url(assets/waiting.cur), auto`)
+    () => ($("#blue").style.cursor = `url(assets/cursors/waiting.cur), auto`)
   )
 
   after(
     1 + 0.5 + 0.3 + 0.2,
-    () => ($("#blue").style.cursor = `url(assets/default.cur), auto`)
+    () => ($("#blue").style.cursor = `url(assets/cursors/default.cur), auto`)
   )
 
   // TODO: We should add a start button for user to click
