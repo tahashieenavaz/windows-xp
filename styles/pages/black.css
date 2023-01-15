@@ -1,0 +1,56 @@
+#black img {
+  width: 400px;
+  pointer-events: none;
+  user-select: none;
+}
+#black #loader {
+  width: 250px;
+  height: 20px;
+  border-radius: 0.5rem;
+  border: 1px solid #fafafa;
+  padding: 0.75rem 0;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+#black .dots {
+  display: flex;
+  gap: 0.2rem;
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 300ms;
+  animation: loaderDots 3s infinite linear;
+}
+#black .dot {
+  border-radius: 0.1rem;
+  width: 15px;
+  aspect-ratio: 1;
+  background: #3b77bc;
+}
+#black .copyright {
+  width: 80vw;
+  font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#black .copyright > div:nth-child(2) img {
+  width: 105px;
+}
+#black .top {
+  flex: 1;
+  display: grid;
+  place-content: center;
+  gap: 2rem;
+}
+#black {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  cursor: none;
+}

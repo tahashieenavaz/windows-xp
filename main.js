@@ -1,5 +1,7 @@
+import "./styles/animations.css"
 import "./styles/main.css"
-import "./styles/main.css"
+import "./styles/pages/black.css"
+import "./styles/pages/blue.css"
 
 import { $, after } from "@/functions"
 

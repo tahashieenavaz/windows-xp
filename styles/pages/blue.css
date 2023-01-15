@@ -1,0 +1,78 @@
+#blue {
+  cursor: url("assets/default.cur"), auto;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: #4f84eb;
+  color: #fff;
+  display: none;
+}
+#blue main {
+  flex: 7;
+  display: flex;
+}
+#blue main :is(.left, .right) {
+  flex: 1;
+  display: flex;
+  font-size: 3rem;
+  font-style: italic;
+  align-items: center;
+}
+#blue main .right span {
+  text-shadow: 1.3px 2.5px 0 #0037a9;
+}
+#blue :is(header, footer) {
+  background: #0037a9;
+  flex: 1;
+  position: relative;
+}
+#blue :is(header, footer):before,
+#blue :is(header, footer):after {
+  content: "";
+  height: 3px;
+  width: 10px;
+  left: 50%;
+  position: absolute;
+}
+#blue header:after {
+  background: linear-gradient(
+    to left,
+    var(--gradient-color) var(--gradient-first-percentage),
+    transparent
+  );
+  transform: translate(-100%, 100%);
+}
+#blue header:before {
+  transform: translate(0%, 100%);
+  background: linear-gradient(
+    to right,
+    var(--gradient-color) var(--gradient-first-percentage),
+    transparent
+  );
+}
+#blue header:after,
+#blue header:before {
+  bottom: 0;
+  width: 50%;
+}
+#blue footer:after,
+#blue footer:before {
+  top: 0;
+  width: 50%;
+}
+#blue footer:after {
+  background: linear-gradient(
+    to left,
+    var(--gradient-color) var(--gradient-first-percentage),
+    transparent
+  );
+  transform: translate(-100%, -100%);
+}
+#blue footer:before {
+  transform: translate(0%, -100%);
+  background: linear-gradient(
+    to right,
+    var(--gradient-color) var(--gradient-first-percentage),
+    transparent
+  );
+}
