@@ -1,0 +1,36 @@
+#desktop {
+  cursor: url("assets/cursor/default.cur"), auto;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background: url(assets/background.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: none;
+}
+
+.menubar {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 33px;
+  display: flex;
+  background: linear-gradient(
+    180deg,
+    #0997ff,
+    #0053ee 8%,
+    #0050ee 40%,
+    #06f 88%,
+    #06f 93%,
+    #005bff 95%,
+    #003dd7 96%,
+    #003dd7
+  );
+}
+
+.menubar button {
+  all: unset;
+  width: 90px;
+  background: url(assets/start.png);
+}
